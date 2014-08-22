@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="NumberProgressBar_demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NumberProgressBar_demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:song="using:Song"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style x:Key="NumberProgressBar_Default" TargetType="song:NumberProgressBar">
+                <Setter Property="Max" Value="100" />
+                <Setter Property="Progress" Value="0" />
+
+                <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+                <Setter Property="ProgressReachedColor" Value="#3498DB"/>
+
+                <Setter Property="ProgressTextSize" Value="10"/>
+                <Setter Property="ProgressTextColor" Value="#3498DB" />
+
+                <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+                <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+            </Style>
+        </StackPanel.Resources>
+
+        <song:NumberProgressBar x:Name="song" Margin="0,60,0,0" Loaded="song_Loaded" Style="{StaticResource NumberProgressBar_Default}"></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song1" Margin="0,60,0,0" Progress="10" ProgressBarStyle="NumberProgressBar_Passing_Green" ></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song2" Margin="0,60,0,0" Progress="20" ProgressBarStyle="NumberProgressBar_Relax_Blue"></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song3" Margin="0,60,0,0" Progress="30" ProgressBarStyle="NumberProgressBar_Grace_Yellow"></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song4" Margin="0,60,0,0" Progress="40" ProgressBarStyle="NumberProgressBar_Warning_Red"></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song5" Margin="0,60,0,0" Progress="50" ProgressBarStyle="NumberProgressBar_Funny_Orange"></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song6" Margin="0,60,0,0" Progress="70" ProgressBarStyle="NumberProgressBar_Beauty_Red"></song:NumberProgressBar>
+
+        <song:NumberProgressBar x:Name="song7" Margin="0,60,0,0" Progress="80" ProgressBarStyle="NumberProgressBar_Twinkle_Night"></song:NumberProgressBar>
+
+    </StackPanel>
+</Page>

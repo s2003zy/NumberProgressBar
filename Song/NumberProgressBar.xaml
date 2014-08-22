@@ -1,0 +1,162 @@
+﻿<UserControl
+    x:Class="Song.NumberProgressBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Song"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    x:Name="thisIsRoot"
+    >
+
+
+    <UserControl.Resources>
+        <Style x:Key="NumberProgressBar_Default" TargetType="local:NumberProgressBar">
+   
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#3498DB"/>
+   
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#3498DB" />
+            
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+      
+        </Style>
+
+        <Style x:Key="NumberProgressBar_Passing_Green" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#70A800"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#70A800" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+
+        <Style x:Key="NumberProgressBar_Beauty_Red" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#FF3D7F"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#FF3D7F" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+
+
+        <Style x:Key="NumberProgressBar_Warning_Red" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#E74C3C"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#E74C3C" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+
+        <Style x:Key="NumberProgressBar_Relax_Blue" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#6DBCDB"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#6DBCDB" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+
+        <Style x:Key="NumberProgressBar_Grace_Yellow" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#FFC73B"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#FFC73B" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+
+        <Style x:Key="NumberProgressBar_Funny_Orange" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#FF530D"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#FF530D" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+
+        <Style x:Key="NumberProgressBar_Twinkle_Night" TargetType="local:NumberProgressBar">
+
+            <Setter Property="Max" Value="100" />
+            <Setter Property="Progress" Value="0" />
+
+            <Setter Property="ProgressUnreachedColor" Value="#CCCCCC"/>
+            <Setter Property="ProgressReachedColor" Value="#ECF0F1"/>
+
+            <Setter Property="ProgressTextSize" Value="10"/>
+            <Setter Property="ProgressTextColor" Value="#ECF0F1" />
+
+            <Setter Property="ProgressReachedBarHeight" Value="1.5"/>
+            <Setter Property="ProgressUnreachedBarHeight" Value="0.75"/>
+
+        </Style>
+        
+    </UserControl.Resources>
+    
+    <StackPanel Loaded="LayoutRoot_Loaded" x:Name="LayoutRoot" Orientation="Horizontal" Margin="2,2,2,2">
+        <StackPanel.Resources>
+        </StackPanel.Resources>
+        <Rectangle VerticalAlignment="Center" 
+                   x:Name="LayoutReachedRect"
+                   >
+        </Rectangle>
+        <TextBlock x:Name="LayoutText"
+                   VerticalAlignment="Center"
+                   Margin="3,0,3,0" ></TextBlock>
+        <Rectangle  VerticalAlignment="Center" 
+                    x:Name="LayoutUnreachedRect"   
+                    >
+        </Rectangle>
+    </StackPanel>
+</UserControl>
