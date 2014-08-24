@@ -142,7 +142,7 @@ A student in mainland China
 
 Welcom to contact me.
 
-Also welcom to offer me intership.Thank in advances. ^_^ 
+Also welcom to offer me intership.Thanks in advances. ^_^ 
 
 My blog: [http://blog.s2003zy.com](http://blog.s2003zy.com)
 
