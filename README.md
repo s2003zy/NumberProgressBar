@@ -58,6 +58,8 @@ using Song;
 ```XAML
 <song:NumberProgressBar></song:NumberProgressBar>
 ```
+* Use 'Progress' not 'Value'
+  if you want to set the Progress you should use 'Progress' property.
 * Use some Style
 
 I also move some predesign style from [daimajia](https://github.com/daimajia). You can use them via `ProgressBarStyle` property.
