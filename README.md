@@ -6,9 +6,9 @@ NumberProgressBar for Windows Phone 8.1
 
 The NumberProgressBar is a bar, slim and sexy (every man wants! ). 
 
-[daimajia](https://github.com/daimajia) already build it for Android and [Ming-zhe](https://github.com/Ming-Zhe) build it for IOS. So as beginner of Windows Phone 8.1 I decide build it for wp8.1. Hope I could learn more about wp8.1 and share it for every one who want to use it. 
+Thanks to [daimajia](https://github.com/daimajia) design this beautiful Bar.
 
-And also you can contribute more color style, or new idea to me.
+[daimajia](https://github.com/daimajia) already build it for Android and [Ming-zhe](https://github.com/Ming-Zhe) build it for IOS. So as beginner of Windows Phone 8.1 I decide build it for wp8.1. Hope I could learn more about wp8.1 and share it for every one who want to use it. 
 
 ---
 
@@ -145,4 +145,5 @@ Also welcom to offer me intership.Thank in advances. ^_^
 My blog: [http://blog.s2003zy.com](http://blog.s2003zy.com)
 
 My email:[s2003zy@gmail.com](mailto:s2003zy@gmail.com)
+
 
