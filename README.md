@@ -22,6 +22,11 @@ Thanks to [daimajia](https://github.com/daimajia) design this beautiful Bar.
 
 * Use NuGet to add the NumberProgressBar to your Project
 
+* To install NumberProgressBar, run the following command in the Package Manager Console
+```
+PM> Install-Package NumberProgressBar 
+```
+OR
   * Open Nuget from Visual Studio
   ![](https://github.com/s2003zy/Images/blob/master/NumberProgressBar/2.jpg)
 
