@@ -12,7 +12,7 @@ Thanks to [daimajia](https://github.com/daimajia) design this beautiful Bar.
 
 ---
 
-###Demo
+### Demo
 
  ![](https://github.com/s2003zy/Images/blob/master/NumberProgressBar/1.gif)
 
